@@ -32,8 +32,6 @@ namespace Ejemplo
         private void Form1_Load(object sender, EventArgs e)
         {
             CargarPeliculas();
-
-
         }
 
         private void Button1_Click(object sender, EventArgs e)
@@ -99,7 +97,6 @@ namespace Ejemplo
 
         private void CargarAnuncios()
         {
-
             string currentDirName = @"C:\Users\Administrador Local\Videos\Uneme";
             Console.WriteLine(currentDirName);
 
@@ -117,7 +114,6 @@ namespace Ejemplo
             bool valido = false;
             do
             {
-
                 if (filesAnuncios[contadorAnuncios].ToString().EndsWith("mp4") ||
                     filesAnuncios[contadorAnuncios].ToString().EndsWith("avi") ||
                     filesAnuncios[contadorAnuncios].ToString().EndsWith("mkv"))
@@ -134,7 +130,6 @@ namespace Ejemplo
             contadorAnuncios++;
 
             vlcControl2.SetMedia(info);
-
             vlcControl2.Play();
             vlcControl2.GetCurrentMedia();
             vlcControl1.Pause();
